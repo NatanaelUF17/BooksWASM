@@ -94,7 +94,7 @@
           "Microsoft.AspNetCore.App"
         ],
         "build": {
-          "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
+          "build/_._": {}
         }
       },
       "Microsoft.AspNetCore.Metadata/5.0.6": {
@@ -338,6 +338,25 @@
         "runtime": {
           "bin/placeholder/BooksWASM.Client.dll": {}
         }
+      },
+      "BooksWASM.Server/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BooksWASM.Client": "1.0.0",
+          "BooksWASM.Shared": "1.0.0",
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.6",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/BooksWASM.Server.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BooksWASM.Server.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "BooksWASM.Shared/1.0.0": {
         "type": "project",
@@ -896,6 +915,11 @@
       "path": "../Client/BooksWASM.Client.csproj",
       "msbuildProject": "../Client/BooksWASM.Client.csproj"
     },
+    "BooksWASM.Server/1.0.0": {
+      "type": "project",
+      "path": "../Server/BooksWASM.Server.csproj",
+      "msbuildProject": "../Server/BooksWASM.Server.csproj"
+    },
     "BooksWASM.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/BooksWASM.Shared.csproj",
@@ -904,10 +928,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BooksWASM.Client >= 1.0.0",
-      "BooksWASM.Shared >= 1.0.0",
-      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.6",
-      "Newtonsoft.Json >= 13.0.1"
+      "BooksWASM.Server >= 1.0.0",
+      "BooksWASM.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -918,11 +940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Server\\BooksWASM.Server.csproj",
-      "projectName": "BooksWASM.Server",
-      "projectPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Server\\BooksWASM.Server.csproj",
+      "projectUniqueName": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\BooksWASM.RESTServices\\BooksWASM.RESTServices.csproj",
+      "projectName": "BooksWASM.RESTServices",
+      "projectPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\BooksWASM.RESTServices\\BooksWASM.RESTServices.csproj",
       "packagesPath": "C:\\Users\\snake\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Server\\obj\\",
+      "outputPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\BooksWASM.RESTServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -945,8 +967,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Client\\BooksWASM.Client.csproj": {
-              "projectPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Client\\BooksWASM.Client.csproj"
+            "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Server\\BooksWASM.Server.csproj": {
+              "projectPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Server\\BooksWASM.Server.csproj"
             },
             "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Shared\\BooksWASM.Shared.csproj": {
               "projectPath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Shared\\BooksWASM.Shared.csproj"
@@ -963,16 +985,6 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly.Server": {
-            "target": "Package",
-            "version": "[5.0.6, )"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -984,9 +996,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

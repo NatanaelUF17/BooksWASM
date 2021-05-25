@@ -8,6 +8,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksWASM.Client", "Client\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksWASM.Shared", "Shared\BooksWASM.Shared.csproj", "{DBBC944B-3BCA-4556-8C4A-EA4391791119}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksWASM.RESTServices", "BooksWASM.RESTServices\BooksWASM.RESTServices.csproj", "{E05E01B4-72C0-46E8-9C86-4E40FC693022}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,18 @@ Global
 		{DBBC944B-3BCA-4556-8C4A-EA4391791119}.Release|x64.Build.0 = Release|Any CPU
 		{DBBC944B-3BCA-4556-8C4A-EA4391791119}.Release|x86.ActiveCfg = Release|Any CPU
 		{DBBC944B-3BCA-4556-8C4A-EA4391791119}.Release|x86.Build.0 = Release|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Debug|x64.Build.0 = Debug|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Debug|x86.Build.0 = Debug|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Release|x64.ActiveCfg = Release|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Release|x64.Build.0 = Release|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Release|x86.ActiveCfg = Release|Any CPU
+		{E05E01B4-72C0-46E8-9C86-4E40FC693022}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

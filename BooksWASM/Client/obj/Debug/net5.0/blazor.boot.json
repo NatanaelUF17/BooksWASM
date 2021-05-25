@@ -200,7 +200,6 @@
     },
     "lazyAssembly": null,
     "pdb": {
-      "BooksWASM.Shared.pdb": "sha256-eCEXLTyRMWWCe4fDXvJgeD8hN1ljwZqjN+3y6UDAbHc=",
       "BooksWASM.Client.pdb": "sha256-6Y18Slzb2YN4azOEcdrRne1ENhRAsCeXTXHU4i7K0es="
     },
     "runtime": {

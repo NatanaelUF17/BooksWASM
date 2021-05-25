@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dFWCZVPysuNDY/4sxwusGtBb1XXQ/faYp9mqvvi025PBf5W9VUmjL+Z4l4ENtKsDfGTXBt07PVpKOBPCGnLk4A==",
+  "dgSpecHash": "wQoPyPELVuQJxAu+qK3wsBkQRhg6FDm5VyJ2thAfk+ENI2umfCu5y4vjwZxsraoALr8gHOXwW6nQFs4qzBSndQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Server\\BooksWASM.Server.csproj",
+  "projectFilePath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\BooksWASM.RESTServices\\BooksWASM.RESTServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\snake\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.6\\microsoft.aspnetcore.authorization.5.0.6.nupkg.sha512",
     "C:\\Users\\snake\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.6\\microsoft.aspnetcore.components.5.0.6.nupkg.sha512",
