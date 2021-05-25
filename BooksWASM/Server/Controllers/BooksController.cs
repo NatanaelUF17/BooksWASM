@@ -26,20 +26,13 @@ namespace BooksWASM.Server.Controllers
         {
             List<Books> books;
 
-            try
+            books = await _booksServices.GetAllBooksAsync();
+            
+            if (books.Count > 0)
             {
-                books = await _booksServices.GetAllBooksAsync();
-                if (books.Count > 0)
-                {
-                    return Ok(books);
-                }
+                return Ok(books);
             }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
+           
             return NoContent();
         }
 
@@ -48,69 +41,61 @@ namespace BooksWASM.Server.Controllers
         {
             Books book;
 
-            try
+            if (id > 0)
             {
-                if(id > 0)
-                {
-                    book = await _booksServices.GetBookAsync(id);
+                book = await _booksServices.GetBookAsync(id);
 
-                    if(book == null)
-                    {
-                        return NotFound(book);
-                    }
-                }
-                else
+                if (book == null)
                 {
-                    return NotFound(id);
+                    return NotFound(book);
                 }
             }
-            catch (Exception)
+            else
             {
-
-                throw;
+                return NotFound($"Error 404: id: {id} not found in the current context");
             }
-
+            
             return Ok(book);
         }
 
         [HttpPost]
         public async Task<ActionResult<Books>> Post([FromBody] Books book)
         {
-            try
-            {
-                if(book == null)
-                {
-                    return BadRequest();
-                }
 
-                await _booksServices.SaveBookAsync(book);
-
-                return CreatedAtAction(nameof(Get), new { id = book.Id }, book);
-            }
-            catch (Exception)
+            if (book == null)
             {
-                throw;
+                return BadRequest();
             }
+
+            await _booksServices.SaveBookAsync(book);
+
+            return CreatedAtAction(nameof(Get), new { id = book.Id }, book);      
         }
 
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Put(int id, [FromBody] Books book)
         {
-            try
+            if (id > 0 && book != null)
             {
-                if(id > 0 && book != null)
-                {
-                    await _booksServices.UpdateBookAsync(id, book);
-                    return Ok();
-                }
-
-                return NotFound(id);
+                await _booksServices.UpdateBookAsync(id, book);
+                return Ok();
             }
-            catch (Exception)
-            {
 
-                throw;
-            }
+            return NotFound(id);            
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete (int id)
+        {
+            bool isDeleted = false;
+
+            if (id > 0)
+            {
+                isDeleted = await _booksServices.DeleteBookAsync(id);
+                return Ok(isDeleted);
+            }
+
+            return NoContent();
+        }  
     }
 }

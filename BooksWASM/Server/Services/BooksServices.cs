@@ -20,14 +20,43 @@ namespace BooksWASM.Server.Services
         {
             return await restService.GetBooksRestAsync();
         }
+
         public async Task<Books> GetBookAsync(int id)
         {
-            return await restService.GetBookRestAsync(id);
+            Books book = new Books();
+
+            try
+            {
+                book = await restService.GetBookRestAsync(id);
+
+                if (book != null)
+                {
+                    return book;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return book;
         }
 
         public async Task SaveBookAsync(Books book)
         {
-            await restService.AddBookRestAsync(book);
+            try
+            {
+                if(book != null)
+                {
+                    await restService.AddBookRestAsync(book);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public async Task UpdateBookAsync(int id, Books book)
@@ -48,9 +77,24 @@ namespace BooksWASM.Server.Services
             }
         }
 
-        public Task<bool> DeleteBookAsync(int id)
+        public async Task<bool> DeleteBookAsync(int id)
         {
-            throw new NotImplementedException();
+            bool isDeleted = false;
+
+            try
+            {
+                if (id > 0)
+                {
+                    isDeleted = await restService.DeleteBookRestAsync(id);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return isDeleted;
         }
     }
 }
