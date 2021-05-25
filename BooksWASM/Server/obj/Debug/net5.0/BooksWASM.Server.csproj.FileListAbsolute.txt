@@ -1,3 +1,11 @@
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.csprojAssemblyReference.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.AssemblyInfoInputs.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.AssemblyInfo.cs
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.csproj.CoreCompileInputs.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.RazorAssemblyInfo.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.RazorAssemblyInfo.cs
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Client.StaticWebAssets.xml
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\appsettings.json
@@ -38,14 +46,6 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.RESTServices.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Client.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Shared.pdb
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.csprojAssemblyReference.cache
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.AssemblyInfoInputs.cache
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.AssemblyInfo.cs
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.csproj.CoreCompileInputs.cache
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.RazorAssemblyInfo.cache
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.RazorAssemblyInfo.cs
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\staticwebassets\BooksWASM.Server.StaticWebAssets.Manifest.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\staticwebassets\BooksWASM.Server.StaticWebAssets.xml
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\scopedcss\bundle\BooksWASM.Server.styles.css

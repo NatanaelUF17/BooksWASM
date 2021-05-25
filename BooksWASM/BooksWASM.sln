@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksWASM.Client", "Client\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksWASM.Shared", "Shared\BooksWASM.Shared.csproj", "{DBBC944B-3BCA-4556-8C4A-EA4391791119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksWASM.RESTServices", "BooksWASM.RESTServices\BooksWASM.RESTServices.csproj", "{E05E01B4-72C0-46E8-9C86-4E40FC693022}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksWASM.RESTServices", "BooksWASM.RESTServices\BooksWASM.RESTServices.csproj", "{E05E01B4-72C0-46E8-9C86-4E40FC693022}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

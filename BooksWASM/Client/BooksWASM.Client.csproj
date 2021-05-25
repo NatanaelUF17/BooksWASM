@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Shared\BooksWASM.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Book\" />
+  </ItemGroup>
+
 </Project>

@@ -90,7 +90,7 @@ using BooksWASM.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Shared\NavMenu.razor"
+#line 23 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
