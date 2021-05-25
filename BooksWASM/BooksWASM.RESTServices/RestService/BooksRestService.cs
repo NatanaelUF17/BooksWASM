@@ -20,7 +20,7 @@ namespace Server.RestService
 
         public async Task<List<Books>> GetBooksRestAsync()
         {
-            List<Books> books = null;
+            List<Books> books = new List<Books>();
 
             try
             {
@@ -39,6 +39,29 @@ namespace Server.RestService
             }
 
             return books;
+        }
+
+        public async Task<Books> GetBookRestAsync(int id)
+        {
+            Books book = new Books();
+
+            try
+            {
+                HttpResponseMessage response = await _client.GetAsync($"{_client.BaseAddress}/{id}");
+
+                if(response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    book = JsonConvert.DeserializeObject<Books>(content);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return book;
         }
     }
 }

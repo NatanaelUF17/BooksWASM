@@ -20,9 +20,9 @@ namespace BooksWASM.Server.Services
         {
             return await restService.GetBooksRestAsync();
         }
-        public Task<Books> GetBookAsync(int id)
+        public async Task<Books> GetBookAsync(int id)
         {
-            throw new NotImplementedException();
+            return await restService.GetBookRestAsync(id);
         }
 
         public Task SaveBookAsync(Books book)
