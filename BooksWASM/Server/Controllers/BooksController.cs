@@ -22,15 +22,15 @@ namespace BooksWASM.Server.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> Get()
+        public async Task<ActionResult<IEnumerable<Books>>> Get()
         {
             List<Books> books;
 
             try
             {
-                if(_booksServices.GetAllBooksAsync().IsCompleted)
+                books = await _booksServices.GetAllBooksAsync();
+                if (books.Count > 0)
                 {
-                    books = await _booksServices.GetAllBooksAsync();
                     return Ok(books);
                 }
             }
@@ -71,6 +71,27 @@ namespace BooksWASM.Server.Controllers
             }
 
             return Ok(book);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Books>> Post([FromBody] Books book)
+        {
+            try
+            {
+                if(book == null)
+                {
+                    return BadRequest();
+                }
+
+                await _booksServices.SaveBookAsync(book);
+
+                return CreatedAtAction(nameof(Get), new { id = book.Id }, book);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

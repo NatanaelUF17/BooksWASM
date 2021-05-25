@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Shared.Models;
@@ -62,6 +63,22 @@ namespace Server.RestService
             }
 
             return book;
+        }
+
+        public async Task AddBookRestAsync(Books book)
+        {
+            try
+            {
+                string payload = JsonConvert.SerializeObject(book);
+                var content = new StringContent(payload, Encoding.UTF8, "application/json");
+
+                await _client.PostAsync(_client.BaseAddress, content);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

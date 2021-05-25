@@ -30,9 +30,12 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\Microsoft.JSInterop.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Client.dll
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.RESTServices.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Shared.dll
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.RESTServices.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Client.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.Shared.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.csprojAssemblyReference.cache
@@ -58,6 +61,3 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\ref\BooksWASM.Server.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.genruntimeconfig.cache
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.RESTServices.dll
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\BooksWASM.RESTServices.pdb
