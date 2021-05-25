@@ -1,9 +1,10 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Shared.Models;
 
 namespace Server.Repository
 {
-    public interface IBookRepository<Books>
+    public interface IBookRepository
     {
         Task<List<Books>> GetAllBooksAsync(); 
         Task<Books> GetBookAsync(int id);
