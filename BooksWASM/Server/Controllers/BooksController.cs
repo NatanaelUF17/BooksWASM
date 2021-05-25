@@ -89,6 +89,25 @@ namespace BooksWASM.Server.Controllers
             }
             catch (Exception)
             {
+                throw;
+            }
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id, [FromBody] Books book)
+        {
+            try
+            {
+                if(id > 0 && book != null)
+                {
+                    await _booksServices.UpdateBookAsync(id, book);
+                    return Ok();
+                }
+
+                return NotFound(id);
+            }
+            catch (Exception)
+            {
 
                 throw;
             }

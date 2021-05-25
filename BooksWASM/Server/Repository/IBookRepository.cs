@@ -10,6 +10,6 @@ namespace Server.Repository
         Task<Books> GetBookAsync(int id);
         Task SaveBookAsync(Books book);
         Task UpdateBookAsync(int id, Books book);
-        Task DeleteBookAsync(int id);
+        Task<bool> DeleteBookAsync(int id);
     }
 }

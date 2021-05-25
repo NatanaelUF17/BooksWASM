@@ -80,5 +80,43 @@ namespace Server.RestService
                 throw;
             }
         }
+
+        public async Task UpdateBookRestAsync(int id, Books book)
+        {
+            try
+            {
+                string payload = JsonConvert.SerializeObject(book);
+                var content = new StringContent(payload, Encoding.UTF8, "application/json");
+
+                await _client.PutAsync($"{_client.BaseAddress}/{id}", content);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task<bool> DeleteBookRestAsync(int id)
+        {
+            var isDeleted = false;
+
+            try
+            {
+                HttpResponseMessage response = await _client.DeleteAsync($"{_client.BaseAddress}/{id}");
+
+                if(response.IsSuccessStatusCode)
+                {
+                    isDeleted = true;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return isDeleted;
+        }
     }
 }

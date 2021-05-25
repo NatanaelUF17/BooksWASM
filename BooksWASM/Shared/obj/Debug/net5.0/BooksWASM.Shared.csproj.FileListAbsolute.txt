@@ -2,6 +2,7 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\bin\Debug\net5.0\BooksWASM.Shared.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\bin\Debug\net5.0\ref\BooksWASM.Shared.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\bin\Debug\net5.0\BooksWASM.Shared.pdb
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.csprojAssemblyReference.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.AssemblyInfoInputs.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.AssemblyInfo.cs
@@ -9,4 +10,3 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\ref\BooksWASM.Shared.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.pdb
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Shared\obj\Debug\net5.0\BooksWASM.Shared.csprojAssemblyReference.cache
