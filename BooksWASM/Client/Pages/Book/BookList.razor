@@ -1,0 +1,60 @@
+﻿@page "/Books"
+@using BooksWASM.Shared.Models
+@inject IBooksServices bookServices
+
+<h1>Books from API</h1>
+
+
+@if (books == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="input-group mb-3 mt-3 col-6">
+            <input type="text" class="form-control" placeholder="Book id">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+        <div class="mb-3 mt-3 col-6">
+            <button class="btn btn-outline-success">Add Book</button>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Page Count</th>
+                <th>Puplish Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in books)
+            {
+                <tr>
+                    <td>@book.Id</td>
+                    <td>@book.Title</td>
+                    <td>@book.PageCount</td>
+                    <td>@book.PublishDate</td>
+                    <td><button class="btn btn-outline-warning">Edit</button></td>
+                    <td><button class="btn btn-outline-danger">Delete</button></td>
+                    <td><button class="btn btn-outline-primary">Details</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private Books[] books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        books = await bookServices.GetBooks();
+    }
+}

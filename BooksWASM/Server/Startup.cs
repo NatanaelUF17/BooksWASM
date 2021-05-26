@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using System.Linq;
 using Server.Repository;
 using BooksWASM.Server.Services;
+using System.Net.Http;
 
 namespace BooksWASM.Server
 {
@@ -27,6 +28,7 @@ namespace BooksWASM.Server
 
             services.AddControllersWithViews();
             services.AddScoped<IBookRepository, BooksServices>();
+            services.AddSingleton<HttpClient>();
 
             services.AddRazorPages();
         }
