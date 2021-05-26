@@ -42,7 +42,7 @@ else
                     <td>@book.PageCount</td>
                     <td>@book.PublishDate</td>
                     <td><button class="btn btn-outline-warning">Edit</button></td>
-                    <td><button class="btn btn-outline-danger">Delete</button></td>
+                    <td><button class="btn btn-outline-danger" @onclick="(() => DeleteBook(book.Id))">Delete</button></td>
                     <td><button class="btn btn-outline-primary" @onclick="(() => BookDetail(book.Id))">Details</button></td>
                 </tr>
             }
@@ -62,5 +62,10 @@ else
     private void BookDetail(int id)
     {
         NavigationManager.NavigateTo($"/Books/{id}");
+    }
+
+    private void DeleteBook(int id)
+    {
+        NavigationManager.NavigateTo($"/Books/{id}/Delete");
     }
 }
