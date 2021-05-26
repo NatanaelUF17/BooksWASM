@@ -6,15 +6,15 @@
 
 @if (Id > 0 && isDeleted)
 {
-    <p>Book with id: @Id was deleted successfully</p>
+    <p><em>Book with id: @Id was deleted successfully</em></p>
 }
 else if (Id == 0)
 {
-    <p>There's no existing book with id 0 </p>
+    <p><em>There's no existing book with id 0</em></p>
 }
 else
 {
-    <p>Book with id: @Id was deleted successfully</p>
+    <p><em>There's no existing book with id @Id</em></p>
 }
 
 @code {
