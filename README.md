@@ -14,6 +14,7 @@ After installing dotnet core, open the command line, navigate to the directory p
 * Visual Studio 2019
 * Visual Studio Code
 * Postman
+* Git
 
 ## Libraries
 
