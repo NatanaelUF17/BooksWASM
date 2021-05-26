@@ -638,3 +638,6 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\Razor\Pages\Book\BookDelete.razor.g.cs
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Book\BookForm.razor.g.cs
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\Razor\Pages\Book\BookForm.razor.g.cs
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\bin\Debug\net5.0\wwwroot\_framework\Blazored.Toast.dll.gz
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\bin\Debug\net5.0\wwwroot\_framework\Blazored.Toast.dll
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\build-gz\hPlMmJHc.gz

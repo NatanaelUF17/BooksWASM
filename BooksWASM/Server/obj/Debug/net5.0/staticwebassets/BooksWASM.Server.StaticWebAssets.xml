@@ -2,4 +2,5 @@
   <ContentRoot BasePath="/" Path="C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\bin\Debug\net5.0\wwwroot\" />
   <ContentRoot BasePath="/" Path="C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\scopedcss\bundle\" />
   <ContentRoot BasePath="/" Path="C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\snake\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
 </StaticWebAssets>

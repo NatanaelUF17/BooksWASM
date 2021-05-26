@@ -97,6 +97,20 @@ using BooksWASM.Client.Services;
 #line hidden
 #nullable disable
 #nullable restore
+#line 13 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\_Imports.razor"
+using Blazored.Toast;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
 using BooksWASM.Shared.Models;
 
@@ -112,7 +126,7 @@ using BooksWASM.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 73 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
+#line 72 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
        
 
     private int bookId;
@@ -140,10 +154,19 @@ using BooksWASM.Shared.Models;
 
             bookId = Convert.ToInt32(id);
             book = await bookServices.GetBook(bookId);
+            
+            if(bookId == book.Id)
+            {
+                Toast.ShowSuccess($"Found book with id {book.Id}");
+            } 
+            else
+            {
+                Toast.ShowError($"Not an existing book with id {bookId}");
+            }
         } 
-        catch (Exception)
+        catch (Exception e)
         {
-            throw;
+            Toast.ShowError($"Error: {e.Message}");
         }
     }
 
@@ -157,9 +180,20 @@ using BooksWASM.Shared.Models;
         NavigationManager.NavigateTo($"/Books/{id}/Delete");
     }
 
+    private void AddBook()
+    {
+        NavigationManager.NavigateTo("/Books/Add");
+    }
+
+    private void UpdateBook(int id)
+    {
+        NavigationManager.NavigateTo($"/Books/{id}/Edit");
+    }
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService Toast { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBooksServices bookServices { get; set; }
     }

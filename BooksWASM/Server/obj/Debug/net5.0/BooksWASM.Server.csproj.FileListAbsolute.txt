@@ -61,3 +61,4 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\ref\BooksWASM.Server.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\obj\Debug\net5.0\BooksWASM.Server.genruntimeconfig.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Server\bin\Debug\net5.0\Blazored.Toast.dll

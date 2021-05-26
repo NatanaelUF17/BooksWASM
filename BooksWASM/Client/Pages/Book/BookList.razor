@@ -2,6 +2,7 @@
 @using BooksWASM.Shared.Models
 @inject IBooksServices bookServices
 @inject NavigationManager NavigationManager
+@inject IToastService Toast
 
 <h1>Books from API</h1>
 
@@ -18,7 +19,7 @@ else
             <button @onclick="SearchBook" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
         </div>
         <div class="mb-3 mt-3 col-6">
-            <button class="btn btn-outline-success">Add Book</button>
+            <button @onclick="AddBook" class="btn btn-outline-success">Add Book</button>
         </div>
     </div>
     <table class="table">
@@ -35,15 +36,13 @@ else
         </thead>
         @if(book != null)
         {
-             Console.WriteLine(book.Title);
-             <tbody>
-               
+             <tbody>       
                 <tr>
                     <td>@book.Id</td>
                     <td>@book.Title</td>
                     <td>@book.PageCount</td>
                     <td>@book.PublishDate</td>
-                    <td><button class="btn btn-outline-warning">Edit</button></td>
+                    <td><button class="btn btn-outline-warning" @onclick="(() => UpdateBook(book.Id))">Edit</button></td>
                     <td><button class="btn btn-outline-danger" @onclick="(() => DeleteBook(book.Id))">Delete</button></td>
                     <td><button class="btn btn-outline-primary" @onclick="(() => BookDetail(book.Id))">Details</button></td>
                 </tr>
@@ -59,7 +58,7 @@ else
                         <td>@book.Title</td>
                         <td>@book.PageCount</td>
                         <td>@book.PublishDate</td>
-                        <td><button class="btn btn-outline-warning">Edit</button></td>
+                        <td><button class="btn btn-outline-warning" @onclick="(() => UpdateBook(book.Id))">Edit</button></td>
                         <td><button class="btn btn-outline-danger" @onclick="(() => DeleteBook(book.Id))">Delete</button></td>
                         <td><button class="btn btn-outline-primary" @onclick="(() => BookDetail(book.Id))">Details</button></td>
                     </tr>
@@ -97,10 +96,19 @@ else
 
             bookId = Convert.ToInt32(id);
             book = await bookServices.GetBook(bookId);
+            
+            if(bookId == book.Id)
+            {
+                Toast.ShowSuccess($"Found book with id {book.Id}");
+            } 
+            else
+            {
+                Toast.ShowError($"Not an existing book with id {bookId}");
+            }
         } 
-        catch (Exception)
+        catch (Exception e)
         {
-            throw;
+            Toast.ShowError($"Error: {e.Message}");
         }
     }
 
@@ -112,5 +120,15 @@ else
     private void DeleteBook(int id)
     {
         NavigationManager.NavigateTo($"/Books/{id}/Delete");
+    }
+
+    private void AddBook()
+    {
+        NavigationManager.NavigateTo("/Books/Add");
+    }
+
+    private void UpdateBook(int id)
+    {
+        NavigationManager.NavigateTo($"/Books/{id}/Edit");
     }
 }

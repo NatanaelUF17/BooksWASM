@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "G/ephk8EUPCWP8Hi2qFS/zALMJKg23NyjpAncVwfST4nyOLtRt8bC/YqnMpeRGBsMWS0ueAnNRLQSlMwyoQqOQ==",
+  "dgSpecHash": "J6ApPGlTHl9/kdyeWoUd68Tsc8uWsNC7H2T4eNk3Sw6WhaA3JMdRfryj5dcfBAgNaH25mnc9I3quc6OpwqM/dQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\snake\\OneDrive - Universidad Católica Nordestana (UCNE)\\Escritorio\\BooksWASM\\BooksWASM\\Client\\BooksWASM.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\snake\\.nuget\\packages\\blazored.toast\\3.1.2\\blazored.toast.3.1.2.nupkg.sha512",
     "C:\\Users\\snake\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.6\\microsoft.aspnetcore.authorization.5.0.6.nupkg.sha512",
     "C:\\Users\\snake\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.6\\microsoft.aspnetcore.components.5.0.6.nupkg.sha512",
     "C:\\Users\\snake\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.6\\microsoft.aspnetcore.components.analyzers.5.0.6.nupkg.sha512",

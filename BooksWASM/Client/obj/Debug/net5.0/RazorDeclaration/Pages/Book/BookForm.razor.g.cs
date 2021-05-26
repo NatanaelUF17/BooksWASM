@@ -96,6 +96,27 @@ using BooksWASM.Client.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\_Imports.razor"
+using Blazored.Toast;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookForm.razor"
+using BooksWASM.Shared.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Books/Add")]
     [Microsoft.AspNetCore.Components.RouteAttribute("/Books/{Id:int}/Edit")]
     public partial class BookForm : Microsoft.AspNetCore.Components.ComponentBase
@@ -105,6 +126,68 @@ using BooksWASM.Client.Services;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 66 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookForm.razor"
+       
+
+	[Parameter]
+	public int Id { get; set; }
+
+	Books book = new Books();
+
+	protected override async Task OnInitializedAsync()
+	{
+		if(Id > 0)
+		{
+			book = await bookService.GetBook(Id);
+		}
+	}
+
+	private async Task SaveBook()
+	{
+		if(book.Id > 0)
+		{
+			await UpdateBook();
+		}
+		else
+		{
+			await InsertBook();
+		}
+	}
+
+	private async Task InsertBook()
+	{
+		try
+		{
+			await bookService.PostBook(book);
+			Toast.ShowSuccess("Book saved!");
+			book = new Books();
+		}
+		catch (Exception e)
+		{
+			Toast.ShowError($"Error: {e.Message}");
+		}
+	}
+
+	private async Task UpdateBook()
+	{
+		try
+		{
+			await bookService.UpdateBook(book.Id, book);
+			Toast.ShowSuccess("Book updated!");
+			book = new Books();
+		}
+		catch (Exception e)
+		{
+			Toast.ShowError($"Error: {e.Message}");
+		}
+	}
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService Toast { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBooksServices bookService { get; set; }
     }
 }
 #pragma warning restore 1591

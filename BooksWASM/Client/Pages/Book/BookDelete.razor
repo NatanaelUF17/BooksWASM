@@ -1,10 +1,11 @@
 ﻿@page "/Books/{Id:int}/Delete"
 @using BooksWASM.Shared.Models
 @inject IBooksServices booksServices
+@inject IToastService Toast
 
 <h3>Book Delete</h3>
 
-@if (Id > 0 && isDeleted)
+@if (book.Id == Id && isDeleted)
 {
     <p><em>Book with id: @Id was deleted successfully</em></p>
 }
@@ -17,18 +18,43 @@ else
     <p><em>There's no existing book with id @Id</em></p>
 }
 
+<a href="/Books">Back to Books</a>
+
 @code {
     [Parameter]
     public int Id { get; set; }
 
+    Books book = new Books();
     private bool isDeleted;
 
     protected override async Task OnInitializedAsync()
     {
         if (Id > 0)
         {
-            await booksServices.DeleteBook(Id);
-            isDeleted = true;
+            book = await booksServices.GetBook(Id);
+            await DeleteBook();
+        }
+    }
+
+    private async Task DeleteBook()
+    {
+        try
+        {
+            if(Id == 0 || book.Id != Id)
+            {
+                Toast.ShowError($"Book with id {book.Id} not found for delete!");
+            }
+            else
+            {
+                isDeleted = true;
+                await booksServices.DeleteBook(book.Id);
+
+                Toast.ShowSuccess($"Book with id {book.Id} deleted succesfully!");
+            }         
+        }
+        catch (Exception e)
+        {
+            Toast.ShowError($"Error: {e.Message}");
         }
     }
 }
