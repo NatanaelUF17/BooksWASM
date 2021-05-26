@@ -1,6 +1,7 @@
 ﻿@page "/Books"
 @using BooksWASM.Shared.Models
 @inject IBooksServices bookServices
+@inject NavigationManager NavigationManager
 
 <h1>Books from API</h1>
 
@@ -42,7 +43,7 @@ else
                     <td>@book.PublishDate</td>
                     <td><button class="btn btn-outline-warning">Edit</button></td>
                     <td><button class="btn btn-outline-danger">Delete</button></td>
-                    <td><button class="btn btn-outline-primary">Details</button></td>
+                    <td><button class="btn btn-outline-primary" @onclick="(() => BookDetail(book.Id))">Details</button></td>
                 </tr>
             }
         </tbody>
@@ -56,5 +57,10 @@ else
     protected override async Task OnInitializedAsync()
     {
         books = await bookServices.GetBooks();
+    }
+
+    private void BookDetail(int id)
+    {
+        NavigationManager.NavigateTo($"/Books/{id}");
     }
 }

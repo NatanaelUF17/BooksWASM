@@ -1,0 +1,37 @@
+﻿@page "/Books/{Id:int}"
+@using BooksWASM.Shared.Models
+@inject IBooksServices booksServices
+
+<h1 class="text-center">Book Detail</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center mt-4">
+                <h2>@book.Title</h2>
+            </div>
+            <div class="mt-4">
+                <p>@book.Description</p>
+            </div>
+            <div class="align-items-end">
+                <b>Publish Date: </b><em>@book.PublishDate</em>
+            </div>
+            <div class="mt-5">
+                <a href="/Books" class="mb-5">Back to Books</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    Books book = new Books();
+
+    protected override async Task OnInitializedAsync()
+    {
+        book = await booksServices.GetBook(Id);
+    }
+}

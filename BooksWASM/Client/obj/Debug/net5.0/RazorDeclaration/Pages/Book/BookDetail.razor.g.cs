@@ -97,14 +97,14 @@ using BooksWASM.Client.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
+#line 2 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookDetail.razor"
 using BooksWASM.Shared.Models;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Books")]
-    public partial class BookList : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Books/{Id:int}")]
+    public partial class BookDetail : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,25 +112,22 @@ using BooksWASM.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
+#line 27 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookDetail.razor"
        
-    private Books[] books;
+    [Parameter]
+    public int Id { get; set; }
+
+    Books book = new Books();
 
     protected override async Task OnInitializedAsync()
     {
-        books = await bookServices.GetBooks();
-    }
-
-    private void BookDetail(int id)
-    {
-        NavigationManager.NavigateTo($"/Books/{id}");
+        book = await booksServices.GetBook(Id);
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBooksServices bookServices { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBooksServices booksServices { get; set; }
     }
 }
 #pragma warning restore 1591
