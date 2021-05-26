@@ -18,14 +18,30 @@ namespace BooksWASM.Client.Services
             Http = client;
         }
 
+        public async Task<Books[]> GetBooks()
+        {
+            return await Http.GetFromJsonAsync<Books[]>(Url);
+        }
+
         public async Task<Books> GetBook(int id)
         {
             return await Http.GetFromJsonAsync<Books>($"{Url}/{id}");
         }
 
-        public async Task<Books[]> GetBooks()
+        public async Task PostBook(Books book)
         {
-            return await Http.GetFromJsonAsync<Books[]>(Url);
+            await Http.PostAsJsonAsync(Url, book);
         }
+
+        public async Task UpdateBook(int id, Books book)
+        {
+            await Http.PutAsJsonAsync($"{Url}/{id}", book);
+        }
+
+        public async Task DeleteBook(int id)
+        {
+            await Http.DeleteAsync($"{Url}/{id}");
+        }
+
     }
 }

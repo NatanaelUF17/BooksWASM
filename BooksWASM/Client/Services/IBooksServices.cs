@@ -10,6 +10,9 @@ namespace BooksWASM.Client.Services
     {
         Task<Books[]> GetBooks();
         Task<Books> GetBook(int id);
-
+        Task PostBook(Books book);
+        Task UpdateBook(int id, Books book);
+        Task DeleteBook(int id);
+        
     }
 }
