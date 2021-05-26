@@ -14,8 +14,8 @@ else
 {
     <div class="row">
         <div class="input-group mb-3 mt-3 col-6">
-            <input type="text" class="form-control" placeholder="Book id">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            <input @bind="id" type="text" class="form-control" placeholder="Book id">
+            <button @onclick="SearchBook" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
         </div>
         <div class="mb-3 mt-3 col-6">
             <button class="btn btn-outline-success">Add Book</button>
@@ -33,9 +33,11 @@ else
                 <th>Details</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (var book in books)
-            {
+        @if(book != null)
+        {
+             Console.WriteLine(book.Title);
+             <tbody>
+               
                 <tr>
                     <td>@book.Id</td>
                     <td>@book.Title</td>
@@ -45,18 +47,61 @@ else
                     <td><button class="btn btn-outline-danger" @onclick="(() => DeleteBook(book.Id))">Delete</button></td>
                     <td><button class="btn btn-outline-primary" @onclick="(() => BookDetail(book.Id))">Details</button></td>
                 </tr>
-            }
-        </tbody>
+            </tbody>
+        } 
+        else
+        {
+            <tbody>
+                @foreach (var book in books)
+                {
+                    <tr>
+                        <td>@book.Id</td>
+                        <td>@book.Title</td>
+                        <td>@book.PageCount</td>
+                        <td>@book.PublishDate</td>
+                        <td><button class="btn btn-outline-warning">Edit</button></td>
+                        <td><button class="btn btn-outline-danger" @onclick="(() => DeleteBook(book.Id))">Delete</button></td>
+                        <td><button class="btn btn-outline-primary" @onclick="(() => BookDetail(book.Id))">Details</button></td>
+                    </tr>
+                }
+            </tbody>
+        }
     </table>
 }
 
 
 @code {
+
+    private int bookId;
+    private string id;
+
     private Books[] books;
+    private Books book;
 
     protected override async Task OnInitializedAsync()
     {
         books = await bookServices.GetBooks();
+        book = null;
+    }
+
+    private async Task SearchBook()
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                book = null;
+                books = await bookServices.GetBooks();
+                return;
+            }
+
+            bookId = Convert.ToInt32(id);
+            book = await bookServices.GetBook(bookId);
+        } 
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     private void BookDetail(int id)

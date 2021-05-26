@@ -96,72 +96,15 @@ using BooksWASM.Client.Services;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
-using BooksWASM.Shared.Models;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Books")]
-    public partial class BookList : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Books/Add")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Books/{Id:int}/Edit")]
+    public partial class BookForm : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 73 "C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\Pages\Book\BookList.razor"
-       
-
-    private int bookId;
-    private string id;
-
-    private Books[] books;
-    private Books book;
-
-    protected override async Task OnInitializedAsync()
-    {
-        books = await bookServices.GetBooks();
-        book = null;
-    }
-
-    private async Task SearchBook()
-    {
-        try
-        {
-            if (string.IsNullOrEmpty(id))
-            {
-                book = null;
-                books = await bookServices.GetBooks();
-                return;
-            }
-
-            bookId = Convert.ToInt32(id);
-            book = await bookServices.GetBook(bookId);
-        } 
-        catch (Exception)
-        {
-            throw;
-        }
-    }
-
-    private void BookDetail(int id)
-    {
-        NavigationManager.NavigateTo($"/Books/{id}");
-    }
-
-    private void DeleteBook(int id)
-    {
-        NavigationManager.NavigateTo($"/Books/{id}/Delete");
-    }
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBooksServices bookServices { get; set; }
     }
 }
 #pragma warning restore 1591
