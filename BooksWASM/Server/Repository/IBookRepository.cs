@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Shared.Models;
+using BooksWASM.Shared.Models;
 
 namespace Server.Repository
 {

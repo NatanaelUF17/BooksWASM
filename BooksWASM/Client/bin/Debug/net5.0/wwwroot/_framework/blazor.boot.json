@@ -195,13 +195,13 @@
       "mscorlib.dll": "sha256-jU85t8bOVm2PPQRkPJ1kS0nCJIyBjjlet2IR1d9m+RI=",
       "netstandard.dll": "sha256-B6gmXEMfYgOuaOR1g1cGHLn2kDlZYAah4K2XNUZbTs4=",
       "System.Private.CoreLib.dll": "sha256-XY0bl1U8F\/iSbQzkmIHM8UtE\/R9VntZoy\/kMbvuMjTA=",
-      "BooksWASM.Shared.dll": "sha256-6sjXptn0DRvkPQkOnUrwKUDimK7IWY+ERfMSweq5acU=",
-      "BooksWASM.Client.dll": "sha256-hFxI2Xfn6tlDVsUcn9g3XoZuq3PBIdJaw6UYQuhOgP0="
+      "BooksWASM.Shared.dll": "sha256-kiQbJOXNVkItzkSmcKBFfkMb0LvmYJ5fdFq7pJEr5+8=",
+      "BooksWASM.Client.dll": "sha256-yUh2kozj3kB7HF3NAxRfQogz25vWxBoQ8cMhIpqOo3U="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BooksWASM.Shared.pdb": "sha256-2bFgJ4t38Fnon1cscNuPHuzWpan8MxiebMR0GugJZtI=",
-      "BooksWASM.Client.pdb": "sha256-7B+kxTZx5RZyd6SJHNTvkisPkv46qqmaa+kUoWO6W9A="
+      "BooksWASM.Shared.pdb": "sha256-GAPD463Ob3n0gWtxAoOi0rn\/BBIQLpaGbkG8OmkOw4Q=",
+      "BooksWASM.Client.pdb": "sha256-I8I1ANpT+\/yFZX0Q\/woqW7Wd+HOJ9ktuwwPd4dAPrrU="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-OEDZp6noMH3AdT8qd0zd7ZXzy2CsPQ+CZeQnYmRoVWo=",

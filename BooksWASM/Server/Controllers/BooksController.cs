@@ -1,8 +1,8 @@
 ﻿using BooksWASM.Server.Services;
+using BooksWASM.Shared.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Server.Repository;
-using Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

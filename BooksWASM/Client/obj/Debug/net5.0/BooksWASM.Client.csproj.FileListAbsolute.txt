@@ -1,4 +1,4 @@
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.csprojAssemblyReference.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.csproj.AssemblyReference.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.AssemblyInfoInputs.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.AssemblyInfo.cs
@@ -630,3 +630,5 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\ref\BooksWASM.Client.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\BooksWASM.Client.pdb
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Books\BooksList.razor.g.cs
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\Client\obj\Debug\net5.0\Razor\Pages\Books\BooksList.razor.g.cs

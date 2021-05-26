@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using BooksWASM.Shared.Models;
 using Newtonsoft.Json;
-using Shared.Models;
 
 namespace Server.RestService
 {

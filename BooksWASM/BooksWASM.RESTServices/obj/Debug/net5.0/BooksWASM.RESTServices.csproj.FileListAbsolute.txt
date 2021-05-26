@@ -4,7 +4,7 @@ C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\Boo
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\bin\Debug\net5.0\BooksWASM.RESTServices.pdb
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\bin\Debug\net5.0\BooksWASM.Shared.dll
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\bin\Debug\net5.0\BooksWASM.Shared.pdb
-C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\obj\Debug\net5.0\BooksWASM.RESTServices.csprojAssemblyReference.cache
+C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\obj\Debug\net5.0\BooksWASM.RESTServices.csproj.AssemblyReference.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\obj\Debug\net5.0\BooksWASM.RESTServices.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\obj\Debug\net5.0\BooksWASM.RESTServices.AssemblyInfoInputs.cache
 C:\Users\snake\OneDrive - Universidad Católica Nordestana (UCNE)\Escritorio\BooksWASM\BooksWASM\BooksWASM.RESTServices\obj\Debug\net5.0\BooksWASM.RESTServices.AssemblyInfo.cs

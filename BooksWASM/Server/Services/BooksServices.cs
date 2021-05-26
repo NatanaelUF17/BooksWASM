@@ -1,6 +1,6 @@
-﻿using Server.Repository;
+﻿using BooksWASM.Shared.Models;
+using Server.Repository;
 using Server.RestService;
-using Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
